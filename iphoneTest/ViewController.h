@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
-
+- (IBAction)onBtnLoginClicked:(id)sender;
+- (IBAction)onBtnQRCode:(id)sender;
+- (CIImage *)createQRForString:(NSString *)qrString;
+- (UIImage *)createQRForStringUIImage:(NSString *)qrString;
+- (UIImage *)createNonInterpolatedUIImageFromCIImage:(CIImage *)image withScale:(CGFloat)scale;
 @end
 

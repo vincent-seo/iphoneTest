@@ -14,6 +14,9 @@
 		BFF9951A1E2C88470009CBFF /* iphoneTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFF995181E2C88470009CBFF /* iphoneTest.xcdatamodeld */; };
 		BFF9951C1E2C88470009CBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF9951B1E2C88470009CBFF /* Assets.xcassets */; };
 		BFF9951F1E2C88470009CBFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF9951D1E2C88470009CBFF /* LaunchScreen.storyboard */; };
+		BFF995281E2CA1930009CBFF /* WebServiceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF995271E2CA1930009CBFF /* WebServiceHandler.m */; };
+		BFF9952B1E2CA1B40009CBFF /* C_User.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF9952A1E2CA1B40009CBFF /* C_User.m */; };
+		BFF9952E1E2CA2F00009CBFF /* GlobalField.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF9952D1E2CA2F00009CBFF /* GlobalField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,12 @@
 		BFF9951B1E2C88470009CBFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFF9951E1E2C88470009CBFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFF995201E2C88470009CBFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF995261E2CA1930009CBFF /* WebServiceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebServiceHandler.h; path = "../../Vote-iPhone/Vote/WebServiceHandler.h"; sourceTree = "<group>"; };
+		BFF995271E2CA1930009CBFF /* WebServiceHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebServiceHandler.m; path = "../../Vote-iPhone/Vote/WebServiceHandler.m"; sourceTree = "<group>"; };
+		BFF995291E2CA1B40009CBFF /* C_User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = C_User.h; path = "../../Vote-iPhone/Vote/C_User.h"; sourceTree = "<group>"; };
+		BFF9952A1E2CA1B40009CBFF /* C_User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = C_User.m; path = "../../Vote-iPhone/Vote/C_User.m"; sourceTree = "<group>"; };
+		BFF9952C1E2CA2F00009CBFF /* GlobalField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalField.h; path = "../../Vote-iPhone/Vote/GlobalField.h"; sourceTree = "<group>"; };
+		BFF9952D1E2CA2F00009CBFF /* GlobalField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlobalField.m; path = "../../Vote-iPhone/Vote/GlobalField.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,8 @@
 		BFF9950B1E2C88470009CBFF /* iphoneTest */ = {
 			isa = PBXGroup;
 			children = (
+				BFF995301E2CA3720009CBFF /* Global */,
+				BFF9952F1E2CA3610009CBFF /* Entity */,
 				BFF9950F1E2C88470009CBFF /* AppDelegate.h */,
 				BFF995101E2C88470009CBFF /* AppDelegate.m */,
 				BFF995121E2C88470009CBFF /* ViewController.h */,
@@ -80,6 +91,26 @@
 				BFF9950D1E2C88470009CBFF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFF9952F1E2CA3610009CBFF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				BFF9952C1E2CA2F00009CBFF /* GlobalField.h */,
+				BFF9952D1E2CA2F00009CBFF /* GlobalField.m */,
+				BFF995291E2CA1B40009CBFF /* C_User.h */,
+				BFF9952A1E2CA1B40009CBFF /* C_User.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		BFF995301E2CA3720009CBFF /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				BFF995261E2CA1930009CBFF /* WebServiceHandler.h */,
+				BFF995271E2CA1930009CBFF /* WebServiceHandler.m */,
+			);
+			name = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +186,10 @@
 			files = (
 				BFF995141E2C88470009CBFF /* ViewController.m in Sources */,
 				BFF995111E2C88470009CBFF /* AppDelegate.m in Sources */,
+				BFF995281E2CA1930009CBFF /* WebServiceHandler.m in Sources */,
 				BFF9951A1E2C88470009CBFF /* iphoneTest.xcdatamodeld in Sources */,
+				BFF9952E1E2CA2F00009CBFF /* GlobalField.m in Sources */,
+				BFF9952B1E2CA1B40009CBFF /* C_User.m in Sources */,
 				BFF9950E1E2C88470009CBFF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
